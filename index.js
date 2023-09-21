@@ -2,10 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 // const dotenv = require("dotenv");
-const connectDB = require("../config/DBConnection");
-const userRouter = require("../routes/User.route");
-const smsRouter = require("../routes/Sms.route");
-const ipRouter = require("../routes/Ip.route");
+const connectDB = require("./config/DBConnection");
+const userRouter = require("./routes/User.route");
+const smsRouter = require("./routes/Sms.route");
+const ipRouter = require("./routes/Ip.route");
 
 // dotenv.config();
 if (process.env.NODE_ENV === "development") {
